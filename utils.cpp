@@ -44,3 +44,12 @@ int64_t ntoh64(void *ptr){
     int64_t res = *((int64_t*)tmp_buffer);
     return res;
 }
+
+void delaySecond(int second){
+    QTime time;
+    time.start();
+    int msec = second * 1000;
+    while(time.elapsed()<msec){
+        QCoreApplication::processEvents();
+    }
+}

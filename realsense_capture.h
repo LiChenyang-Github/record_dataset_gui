@@ -17,6 +17,11 @@
 #include "time.h"
 #include "stdio.h"
 
+//###
+#include <QDebug>
+#include <QTime>
+#include <QFile>
+
 #define JOINT_TYPE_NUM 22
 
 const PXCHandData::JointType JOINTS[JOINT_TYPE_NUM] = {\
@@ -52,10 +57,17 @@ public:
     void stop();
     void stopRecord();
     void init(const char *filename);
-    void startRecord();
+    void init(const QString, const QString, const QString);
+    void initCC(const QString);
+    void initSG(const QString, const QString, const QString);
+    void startRecord(int record_type=0);
+
+    void clearImgIdx();
 signals:
     void imageReady(const QImage &image);
     void fpsReady(const double fps);
+    void frameNb(const int fnb, const int record_type);
+    void finishOneFrame();
 protected:
     void run() override;
 private:
@@ -74,6 +86,21 @@ private:
 
     QMutex mutex;
     QWaitCondition condition;
+
+    //###
+    std::string rgbPrefix, depthPrefix, coordPrefix;
+    std::string rgbImgDir, depthImgDir, coordFileDir;
+    std::string ccPrefix, ccrgbImgDir;
+    std::string sgRGBPrefix, sgDepthPrefix, sgCoordPrefix;
+    std::string sgRGBImgDir, sgDepthImgDir, sgCoordFileDir;
+    QString txtLine;
+    bool recordImgFlag;
+    bool firstLoop = true;
+    int imgIdx;
+    int recordType;
+
+private slots:
+    void processNextFrame();
 };
 
 #endif // REALSENSE_CAPTURE_H

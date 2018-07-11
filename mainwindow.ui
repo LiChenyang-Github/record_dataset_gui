@@ -23,335 +23,472 @@
    <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <widget class="QLabel" name="camera1Preview">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1281</width>
-      <height>511</height>
+      <x>10</x>
+      <y>10</y>
+      <width>320</width>
+      <height>240</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="previewLayout">
-     <property name="sizeConstraint">
-      <enum>QLayout::SetFixedSize</enum>
-     </property>
-     <property name="leftMargin">
-      <number>2</number>
-     </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="camera1Previw">
-         <property name="minimumSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Camera1 Preview</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="camera1_fps_label">
-           <property name="text">
-            <string>Camera1 fps:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="camera1FPSValue">
-           <property name="focusPolicy">
-            <enum>Qt::NoFocus</enum>
-           </property>
-           <property name="text">
-            <string>NULL</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="realsensePreview">
-         <property name="minimumSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Realsense Previw</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QLabel" name="realsens_fps_label">
-           <property name="text">
-            <string>Realsense fps:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="realsenseFPSValue">
-           <property name="text">
-            <string>NULL</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QLabel" name="camera2Preview">
-         <property name="minimumSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="baseSize">
-          <size>
-           <width>320</width>
-           <height>240</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Camera2 Previw</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QLabel" name="camera2_fps_label">
-           <property name="text">
-            <string>Camera2 fps:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="camera1FPSValue_2">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="text">
-            <string>NULL</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-    </layout>
+    <property name="minimumSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Camera_left Preview</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QLabel" name="realsensePreview">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>520</y>
-      <width>1281</width>
-      <height>181</height>
+      <x>360</x>
+      <y>10</y>
+      <width>320</width>
+      <height>240</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <widget class="QLabel" name="hintLabel">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>Click Ready button when you are ready.</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Volunteer ID: </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="volIDLabel">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>NULL</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_6">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Rest State: </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="restStateIDLabel">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>NULL</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_8">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Gesture ID: </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="gestureIDLabel">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>NULL</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
-        <widget class="QPushButton" name="startRecordProgressButton">
-         <property name="text">
-          <string>Start Record Progress</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="stopRecordProgressButton">
-         <property name="text">
-          <string>Stop Record Progress</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_8">
-       <item>
-        <widget class="QPushButton" name="readyButton">
-         <property name="text">
-          <string>Ready</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="restartButton">
-         <property name="text">
-          <string>Restart</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
+    <property name="minimumSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Realsense Previw</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="camera2Preview">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>320</width>
+      <height>240</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Camera_right Preview</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="camera1_fps_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera_left fps:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="camera1FPSValue">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>290</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>NULL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="camera2_fps_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera_right fps:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="realsenseFPSValue">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NULL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="realsens_fps_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Realsense fps:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="camera2FPSValue">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>370</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NULL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hintLabel">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>330</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Click Start button when you are ready.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volIDLabel">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>420</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>NULL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>530</y>
+      <width>208</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gesture ID: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>480</y>
+      <width>207</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Rest State: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="restStateIDLabel">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>480</y>
+      <width>208</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>NULL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gestureIDLabel">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>530</y>
+      <width>208</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>NULL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>430</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Volunteer ID: </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startRecordProgressButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>520</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Record Dynamic Gesture (动态手势)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopRecordProgressButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>580</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop Record Dynamic Gesture (动态手势)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="volNameLineE">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>450</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>450</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volunteer Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="volIDLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>490</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Volunteer ID:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="volIDLineE">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="restIDLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>540</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rest ID:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="restIDLineE">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>550</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gestureIDLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>590</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gesture ID:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gestureIDLineE">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>590</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cameraCalibrationButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>460</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera Calibration (相机标定)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startRecordStaticGestButt">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>640</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Record Static Gesture (静态手势)</string>
+    </property>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

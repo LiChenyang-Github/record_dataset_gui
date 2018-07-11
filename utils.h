@@ -11,6 +11,8 @@
 #include <Windows.h>
 #include <io.h>
 #include <time.h>
+#include <QTime>
+#include <QCoreApplication>
 
 #define SERV_IP "192.168.1.199"
 #define RECV_IP "192.168.1.195"
@@ -34,4 +36,6 @@ int sendn(SOCKET sock, void * buffer_ptr, size_t len);
 void set_addr_s(struct sockaddr_in *addr, const char *ip, u_short port);
 bool send_command(SOCKET scoket, command_t c);
 int64_t ntoh64(void *ptr);
+
+void delaySecond(int second);
 #endif // UTILS_H
